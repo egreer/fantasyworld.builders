@@ -5,19 +5,22 @@
 
 // Colors
 $blue: #4183C4;
+$red: #e10707;
 
 // Grays
 $black: #000;
-$darkerGray: #222;
-$darkGray: #333;
+$darker-gray: #222;
+$dark-gray: #333;
 $gray: #666;
-$lightGray: #eee;
+$light-gray: #eee;
 $white: #fff;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$helvetica-neue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+$garamond: 'EB Garamond', serif;
+$dancing-script: 'Dancing Script', cursive;
 
 // Mobile breakpoints
 @mixin mobile {
