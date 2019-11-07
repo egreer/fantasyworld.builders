@@ -4,7 +4,7 @@
 //
 
 // Colors
-$blue: #4183C4;
+$blue: #4183c4;
 $red: #e10707;
 
 // Grays
@@ -16,11 +16,12 @@ $light-gray: #eee;
 $white: #fff;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helvetica-neue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
-$garamond: 'EB Garamond', serif;
-$dancing-script: 'Dancing Script', cursive;
+$almendra-display: 'Almendra Display', cursive;
+$roboto: Roboto, sans-serif;
+
+$header-font: $almendra-display;
+$body-font: $roboto;
+$subtext-font: $almendra-display;
 
 // Mobile breakpoints
 @mixin mobile {
