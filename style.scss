@@ -218,9 +218,12 @@ nav {
 footer {
   padding: 10px 0;
   text-align: center;
+
+  a {
+    color: $gray;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
-@import "svg-icons";
