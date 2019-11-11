@@ -49,8 +49,8 @@ url: fantasyworld.builders
 baseurl: ""
 
 # Where are tags and categories displayed
-tag_page: '/tags/'
-category_page: '/categories/'
+tag_page: '/chronicles/tags/'
+category_page: '/chronicles/categories/'
 
 # Worlds
 worlds:
@@ -61,7 +61,8 @@ worlds:
 # !! You don't need to change any of the configuration flags below !!
 #
 
-permalink: /:title/
+permalink: /chronicles/:year/:month/:day/:title/
+paginate_path: "/chronicles/:num/"
 
 # The release of Jekyll Now that you're using
 version: v1.2.0

@@ -9,3 +9,4 @@ services:
     volumes:
       - ./:/usr/src/app
     tty: true
+    command: jekyll serve -d /_site --drafts --watch --force_polling -H 0.0.0.0 -P 4000
