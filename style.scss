@@ -219,6 +219,13 @@ footer {
   }
 }
 
+.author-block {
+  .profile-image {
+    height: $profile-image-size;
+    width: $profile-image-size;
+  }
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";

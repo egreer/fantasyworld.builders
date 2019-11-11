@@ -1,6 +1,7 @@
 ---
 layout: post
 title: You're up and running!
+author: eric
 categories: [welcome]
 tags: [welcome]
 ---

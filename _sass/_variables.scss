@@ -23,6 +23,10 @@ $header-font: $almendra-display;
 $body-font: $roboto;
 $subtext-font: $almendra-display;
 
+//== Units
+//
+$profile-image-size: 100px;
+
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {

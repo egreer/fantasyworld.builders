@@ -1,0 +1,18 @@
+{% assign author = site.data.people[page.author] %}
+
+<aside class="author-block border-top container py-3 text-sm-center text-md-left">
+  <img
+  src="/images/{{author.image}}"
+  alt="{{author.name}}"
+  class="profile-image rounded-circle float-md-left m-sm-2 mr-md-3 mb-md-3"
+  />
+  <div class="col-sm-12 col-md-10 col-lg-8">
+    <header>
+      <h5>{{ author.name }}</h5>
+    </header>
+
+    <div>
+      {{ author.bio | markdownify }}
+    </div>
+  </div>
+</aside>
