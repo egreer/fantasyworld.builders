@@ -1,3 +1,9 @@
+anonymous:
+  name: "Anonymous"
+  image: "people/anonymous.jpg"
+  bio: >
+   The author extraordinaire who wishes to remain shrouded in mystery.
+
 eric:
   name: "Eric Greer"
   image: "people/eric.jpg"
