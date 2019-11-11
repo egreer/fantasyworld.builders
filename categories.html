@@ -1,0 +1,27 @@
+---
+layout: page
+title: Categories
+---
+{% assign categories = site.categories | sort %}
+
+<div>
+  <div>
+    {% for category in categories  %}
+      <a href="#{{ category[0] | slugify }}" class="badge badge-danger mr-1">{{ category[0] }}</a>
+    {% endfor %}
+  </div>
+  <hr/>
+  <div>
+    {% for category in categories  %}
+    <h2 id="{{ category[0] | slugify }}">{{ category[0] }}</h2>
+    <ul>
+      {% for post in category[1] %}
+        <li>
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          <small class="date">{{ post.date | date_to_string }}</small>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+</div>

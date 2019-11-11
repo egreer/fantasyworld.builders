@@ -52,6 +52,11 @@ baseurl: ""
 tag_page: '/tags/'
 category_page: '/categories/'
 
+# Worlds
+worlds:
+  - Wheel of Time
+  - Song of Fire and Ice
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: You're up and running!
-category: [welcome]
+categories: [welcome]
 tags: [welcome]
 ---
 
@@ -29,10 +29,10 @@ The easiest way to make your first post is to edit this one. Go into /_posts/ an
    <li>Aliquam tincidunt mauris eu risus.</li>
 </ul>
 
-<pre><code>
+{% highlight css %}
 #header h1 a {
   display: block;
   width: 300px;
   height: 80px;
 }
-</code></pre>
+{% endhighlight %}
