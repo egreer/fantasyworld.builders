@@ -1,14 +1,12 @@
 ---
 layout: post
-title: You're up and running!
-author: eric
-categories: [welcome]
-tags: [welcome]
+title: You're up and running! WOT
+author: anonymous
+categories: [tool]
+tags: [Wheel of Time, D&D]
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
-
-<!-- readmore -->
 
 The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
 
@@ -32,10 +30,10 @@ The easiest way to make your first post is to edit this one. Go into /_posts/ an
    <li>Aliquam tincidunt mauris eu risus.</li>
 </ul>
 
-{% highlight css %}
+<pre><code>
 #header h1 a {
   display: block;
   width: 300px;
   height: 80px;
 }
-{% endhighlight %}
+</code></pre>
