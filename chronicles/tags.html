@@ -7,7 +7,7 @@ title: Tags
 <div>
   <div>
     {% for tag in tags %}
-      <a href="#{{ tag[0] | slugify }}" class="badge badge-danger mr-1">
+      <a href="#{{ tag[0] | slugify }}" class="tag badge badge-danger mr-1">
         {{ tag[0] }}
       </a>
     {% endfor %}

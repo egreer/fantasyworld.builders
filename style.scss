@@ -49,15 +49,20 @@ a {
 .date {
   color: $gray;
   font-family: $subtext-font;
-  font-style: italic;
 }
+
+.tag {
+  font-family: $subtext-font;
+  font-weight: 300;
+}
+
+.text-sub-text {
+  font-family: $subtext-font;
+  font-weight: 300;
+}
+
 
 // Specify the color of the selection
-::-moz-selection {
-  background: $light-gray;
-  color: $black;
-}
-
 ::selection {
   background: $light-gray;
   color: $black;
@@ -73,7 +78,6 @@ a {
 
 .wrapper-masthead {
   border-top: 5px $red solid;
-  margin-bottom: 50px;
 }
 
 .masthead {
@@ -126,8 +130,8 @@ a {
   }
 
   color: $gray;
-  font-family: $header-font;
-  font-size: 16px;
+  font-family: $subtext-font;
+  font-size: 18px;
   font-weight: 300;
   margin: -5px 0 0;
 }
@@ -171,11 +175,9 @@ nav {
 .posts {
   &> .post {
     border-bottom: 1px solid $light-gray;
-    padding-bottom: 2em;
 
     &:last-child {
       border-bottom: 0;
-      padding-bottom: 1em;
     }
   }
 }
