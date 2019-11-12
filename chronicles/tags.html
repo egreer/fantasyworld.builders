@@ -12,18 +12,23 @@ title: Tags
       </a>
     {% endfor %}
   </div>
-  <hr/>
+  <hr />
   <div>
     {% for tag in tags %}
-    <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
-    <ul>
-      {% for post in tag[1] %}
-      <li>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        <small class="date">{{ post.date | date_to_string }}</small>
-      </li>
-      {% endfor %}
-    </ul>
+    <div class="mb-3">
+      <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+      <ul class="fa-ul">
+        {% for post in tag[1] %}
+        <li>
+          <span class="fa-li">
+            <i class="fas fa-chevron-right"></i>
+          </span>
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          <small class="date">{{ post.date | date_to_string }}</small>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
     {% endfor %}
   </div>
 </div>

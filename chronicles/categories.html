@@ -12,16 +12,21 @@ title: Categories
   </div>
   <hr/>
   <div>
-    {% for category in categories  %}
-    <h2 id="{{ category[0] | slugify }}">{{ category[0] }}</h2>
-    <ul>
-      {% for post in category[1] %}
-        <li>
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-          <small class="date">{{ post.date | date_to_string }}</small>
-        </li>
-      {% endfor %}
-    </ul>
+    {% for category in categories %}
+    <div class="mb-3">
+      <h2 id="{{ category[0] | slugify }}">{{ category[0] }}</h2>
+      <ul class="fa-ul">
+        {% for post in category[1] %}
+          <li>
+            <span class="fa-li">
+              <i class="fas fa-chevron-right"></i>
+            </span>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <small class="date">{{ post.date | date_to_string }}</small>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
     {% endfor %}
   </div>
 </div>
