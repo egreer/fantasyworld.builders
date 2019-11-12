@@ -122,6 +122,10 @@ a {
   font-size: 30px;
   letter-spacing: 1px;
   margin: 0;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .site-description {
