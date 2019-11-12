@@ -5,13 +5,7 @@ title: Worlds
 {% assign tags = site.tags | sort %}
 
 <div>
-  <div>
-    {% for tag in tags %}
-      {%  if site.worlds contains tag[0] %}
-        <a href="#{{ tag[0] | slugify }}" class="tag badge badge-danger mr-1">{{ tag[0] }}</a>
-      {% endif %}
-    {% endfor %}
-  </div>
+  {% include components/tag_list.html only_world=true %}
   <hr/>
   <div>
     {% for tag in tags %}

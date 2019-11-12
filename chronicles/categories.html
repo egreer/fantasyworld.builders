@@ -2,17 +2,13 @@
 layout: page
 title: Categories
 ---
-{% assign categories = site.categories | sort %}
+{% assign tags = site.categories | sort %}
 
 <div>
-  <div>
-    {% for category in categories  %}
-      <a href="#{{ category[0] | slugify }}" class="tag badge badge-danger mr-1">{{ category[0] }}</a>
-    {% endfor %}
-  </div>
+  {% include components/tag_list.html %}
   <hr/>
   <div>
-    {% for category in categories %}
+    {% for category in tags %}
     <div class="mb-3">
       <h2 id="{{ category[0] | slugify }}">{{ category[0] }}</h2>
       <ul class="fa-ul">

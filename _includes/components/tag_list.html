@@ -1,0 +1,7 @@
+<div>
+  {% for tag in tags %}
+    {% if include.only_world != true or (include.only_world and site.worlds contains tag[0]) %}
+      <a href="#{{ tag[0] | slugify }}" class="tag badge badge-danger mr-1">{{ tag[0] }}</a>
+    {% endif %}
+  {% endfor %}
+</div>
