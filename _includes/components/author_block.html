@@ -4,14 +4,14 @@
   {% assign author = site.data.people["anonymous"]  %}
 {% endif  %}
 
-<aside class="author-block border-top container py-3 text-sm-center text-md-left">
+<aside class="author-block border-top py-3 text-center text-sm-left">
   {% if author.image %}
     <img
-    src="/images/{{author.image}}"
-    alt="{{author.name}}"
-    class="profile-image rounded-circle float-md-left m-sm-2 mr-md-3 mb-md-3"
-    />
-  {% endif  %}
+      src="/images/{{author.image}}"
+      alt="{{author.name}}"
+      class="profile-image rounded-circle float-sm-left mb-2 mx-2 mr-sm-3 mb-sm-3"
+      />
+  {% endif %}
   <div class="col-sm-12 col-md-10 col-lg-8">
     <header>
       <h5>{{ author.name }}</h5>
